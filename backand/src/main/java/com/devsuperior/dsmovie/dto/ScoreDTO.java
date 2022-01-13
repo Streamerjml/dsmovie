@@ -7,6 +7,7 @@ public class ScoreDTO {
 	private Double score;
 	
 	public ScoreDTO() {
+		
 	}
 
 	public Long getMovieId() {
@@ -32,6 +33,4 @@ public class ScoreDTO {
 	public void setScore(Double score) {
 		this.score = score;
 	}
-
-	
 }
