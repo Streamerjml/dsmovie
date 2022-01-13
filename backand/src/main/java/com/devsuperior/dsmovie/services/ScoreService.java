@@ -26,7 +26,7 @@ public class ScoreService {
 	private ScoreRepository scoreRepository;
 
 	@Transactional
-	public MovieDTO saveSocore(ScoreDTO dto) {
+	public MovieDTO saveScore(ScoreDTO dto) {
 
 		User user = userRepository.findByEmail(dto.getEmail());
 		if (user == null) {
