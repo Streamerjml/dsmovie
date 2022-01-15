@@ -10,7 +10,7 @@ function Navbar() {
                     <a href="https://github.com/Streamerjml">
                         <div className='dsmovie-contact-conteiner'>
                             <GitHubIcon />
-                            <p className='dsmovie-contact-link'>/Pierre</p>
+                            <p className='dsmovie-contact-link'>Pierre</p>
                         </div>
                     </a>
                 </div>

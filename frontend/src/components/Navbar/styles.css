@@ -24,6 +24,8 @@ header {
 }
 
 .dsmovie-contact-link{
+    color: white;
+    font-weight: 700;
     margin: 0 0 0 10px;
     font-size: 14px;
 }
