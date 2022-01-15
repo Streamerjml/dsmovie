@@ -7,10 +7,10 @@ function Navbar() {
             <nav className='container'>
                 <div className='dsmovie-nav-content'>
                     <h1>DSMovie</h1>
-                    <a href="https://github.com/tinholima">
+                    <a href="https://github.com/Streamerjml">
                         <div className='dsmovie-contact-conteiner'>
                             <GitHubIcon />
-                            <p className='dsmovie-contact-link'>/TinhoLima</p>
+                            <p className='dsmovie-contact-link'>/Pierre</p>
                         </div>
                     </a>
                 </div>
