@@ -15,37 +15,37 @@ type StarProps = {
 // getFills(4.1) => [1, 1, 1, 1, 0.5]
 function getFills(score: number) {
 
-    const fills = [0, 0, 0, 0, 0];
-  
-    const integerPart = Math.floor(score);
-  
-    for (let i = 0; i < integerPart; i++) {
-      fills[i] = 1;
-    }
-  
-    const diff = score - integerPart;
-    if (diff > 0) {
-      fills[integerPart] = 0.5;
-    }
-  
-    return fills;
+  const fills = [0, 0, 0, 0, 0];
+
+  const integerPart = Math.floor(score);
+
+  for (let i = 0; i < integerPart; i++) {
+    fills[i] = 1;
   }
 
-  function Star({fill} : StarProps) {
-    if (fill === 0) {
-      return <StarEmpty />
-    } 
-    else if (fill === 1) {
-      return <StarFull />
-    } 
-    else {
-      return <StarHalf />
-    }
+  const diff = score - integerPart;
+  if (diff > 0) {
+    fills[integerPart] = 0.5;
   }
+
+  return fills;
+}
+
+function Star({fill} : StarProps) {
+  if (fill === 0) {
+    return <StarEmpty />
+  } 
+  else if (fill === 1) {
+    return <StarFull />
+  } 
+  else {
+    return <StarHalf />
+  }
+}
 
 function MovieStars({ score } : Props) {
 
-    const fills = getFills(score);
+  const fills = getFills(score);
 
     return(
         <div className="dsmovie-stars-container">
